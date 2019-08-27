@@ -1,0 +1,12 @@
+<% if (username) { %> 
+  <form action="/sign_out" method="POST">
+    <input type="submit" value="GTFO" class="btn btn-dark" >
+  </form>
+<% } else { %>
+ <form action="/sign_in" method ="POST">
+  <div>
+    <label for="username">User Info</label>
+    <input type="text" name="username">
+    <input type="submit" value="SIGN IN RIGHT NOW!">
+</form>
+<% } %>
