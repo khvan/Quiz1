@@ -6,7 +6,7 @@ exports.up = function(knex) {
     t.string("image_url")
     t.text("title")
     t.text("content");
-    t.timestamp("createdAt").defaultTo(knex.fn.now());
+    t.timestamp('created_at').defaultTo(knex.fn.now());
 });
 };
 

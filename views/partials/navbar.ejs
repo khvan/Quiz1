@@ -1,12 +1,25 @@
+<div class ="container">
+<nav class="navbar navbar-expand-sm mb-4" style="border-bottom: solid 1px gray;">
+  <img src="baby.svg" width="30" height="30" alt="">
+<div class="d-flex p-2 bd-highlight" >
+<button class="bt btn-secondary"><a href="/new">Cluck!</a> </button>
+
 <% if (username) { %> 
   <form action="/sign_out" method="POST">
-    <input type="submit" value="GTFO" class="btn btn-dark" >
+   <label for="Sign_out"> <%- locals.username %> </label> 
+   <input type="submit" value="Sign_out" class="btn btn-secondary" >
   </form>
 <% } else { %>
  <form action="/sign_in" method ="POST">
   <div>
     <label for="username">User Info</label>
     <input type="text" name="username">
-    <input type="submit" value="SIGN IN RIGHT NOW!">
+    <input type="submit" class="bt btn-secondary" value="SIGN IN RIGHT NOW!">
 </form>
+
+
 <% } %>
+
+</div>
+</nav>
+</div>

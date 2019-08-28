@@ -4,9 +4,8 @@ const router = express.Router();
 
 
 router.get("/",(req, res)=>{
- res.render("homepage")
+ res.redirect("/clucks")
 })
-
 
 
 router.post('/sign_in', (req, res) =>{
@@ -20,4 +19,4 @@ router.post("/sign_out", (req, res) => {
   res.redirect('/')
 })
 
-module.exports = router
+module.exports = router;

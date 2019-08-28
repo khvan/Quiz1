@@ -8,7 +8,7 @@ module.exports = {
       database: "clucker_db"
     },
     migrations: {
-      directory: '../db/migrations'
+      directory: './db/migrations'
     }
   }
 }
