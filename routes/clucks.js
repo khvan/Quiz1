@@ -4,9 +4,15 @@ const knex = require("../db/client");
 
 const router = express.Router();
 
+
+
+
+
+
 router.get("/clucks", (req, res) => {
   knex("clucks")
     .select("*")
+    .orderBy('created_at', 'desc')
     .then((data) => {
       res.render("clucks/clucks", {
         clucks: data,

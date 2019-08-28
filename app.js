@@ -29,6 +29,8 @@ function getUsernameMiddleware (request, response, next) {
   next ();
 }
 
+
+
 app.use (getUsernameMiddleware);
 
 app.use (express.static (path.join (__dirname, 'public')));
