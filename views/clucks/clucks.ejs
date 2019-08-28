@@ -1,0 +1,17 @@
+<%- include("../partials/header") %>
+<div class="d-flex flex-column bd-highlight mb-3">
+  
+  <% clucks.forEach(element => { %>
+    <%= element.username%>
+    <span class="border border-success">
+    <p class="cluck-header p text-dark"><%= element.username + " \u2022 "  + element.created_at%></p>
+      <p class="created_at p text-dark"></p>
+      <p class="content text-secondary"><%= element.content%></p>
+    <img class="border mb-2 cluck-img" src="<%= element.image_url  %>" alt="">
+  </span>
+  <% }); %>
+  
+</div>
+
+
+<%- include("../partials/footer") %>
